@@ -1,0 +1,9 @@
+:root {
+    --bg-color: rgb(27,33,34);
+    --accent-color: rgb(40,56,54);
+    --primary-text-color: rgb(255,255,255);
+}
+
+body {
+    background-color: var(--bg-color);
+}
