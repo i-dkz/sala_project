@@ -177,7 +177,7 @@ footer {
   padding: 2px;
 }
 
-.intro {
+.card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,9 +189,10 @@ footer {
   background: linear-gradient(rgb(174, 174, 174), var(--accent-color)  );
   /* background-color: var(--accent-color); */
   backdrop-filter: blur(8px);  
+  margin: 10px 0px 10px 0px;
 }
 
-.intro-container {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,3 +260,4 @@ hr {
 .footer-title {
   font-weight: bold;
 }
+
