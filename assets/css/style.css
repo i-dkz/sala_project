@@ -25,12 +25,12 @@ body {
 header {
   margin: 0;
   position: fixed;
-  z-index: 2000;
+  z-index: 1000;
   width: 100%;
   height: 10vh;
-  background: hsla(164, 14%, 15%, 0);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
 }
 
 main {
@@ -42,8 +42,15 @@ main {
   align-items: center;
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
-  font-size: 20px;
-  font-weight: bold;
+  /* font-size: 20px;
+  font-weight: bold; */
+}
+
+.header-nav {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo img {
@@ -53,7 +60,7 @@ main {
 
 .logo {
   display: flex;
-  width: 30%;
+  width: 50%;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -61,7 +68,7 @@ main {
 
 .hamburger {
   z-index: 9999;
-  position: fixed;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,8 +76,8 @@ main {
   height: 60px;
   cursor: pointer;
   transition: all .3s ease-in-out;
-  top: 0.2em;
-  right: 2em;
+  /* top: 0.2em;
+  right: 2em; */
 
 }
 
@@ -119,7 +126,7 @@ main {
   font-family: 'Roboto', sans-serif;
   font-size: 80%;
   position: fixed;
-  z-index: 1000;
+  /* z-index: 1000; */
   inset: 0 0 0 0;
   height: 100vh;
   gap: 8em;
@@ -141,7 +148,7 @@ main {
 
 .mobile-nav a {
   
-  color: var(--primary-text-color);
+  color: var(--bg-color);
   text-decoration: none;
   font-size: 100%;
   font: weight 4px;
@@ -150,7 +157,7 @@ main {
   width: 100%;
   
 
-  text-shadow: .5px .5px 1px #000000;
+  text-shadow: 4px 4px 8px #000000;
 }
 
 .mobile-nav a:hover {
@@ -170,14 +177,25 @@ main {
   justify-content: center;
   align-items: center;
   width: 90%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background: hsla(0, 0%, 0%, 0);
   border-radius: 8px;
-  background: linear-gradient(rgb(216, 216, 216), var(--accent-color)  );
-  backdrop-filter: blur(8px);
-  /* opacity: 80%; */
+  background: linear-gradient(rgb(174, 174, 174), var(--accent-color)  );
+  /* background-color: var(--accent-color); */
+  backdrop-filter: blur(8px);  
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
 }
 
 h1 {
+  font-size: 10vw;
   font-weight: 900;
 }
 
@@ -204,4 +222,15 @@ h1 {
   padding-bottom: 20px;
   color: var(--bg-color);
   font-weight: 300;
+}
+
+.button {
+  width: 90%;
+}
+
+.learn-more {
+  position: relative;
+  margin-bottom: 20px;
+  width: 20%;
+  cursor: pointer;
 }
