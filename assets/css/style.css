@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Mono&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
 :root {
     --bg-color: rgb(255,255,255);
     --accent-color: rgb(27, 46, 46);
@@ -41,19 +41,10 @@ main {
   min-height: 100vh;
   width: 100%;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: var(--primary-text-color);
-  /* font-size: 20px;
-  font-weight: bold; */
-}
+  font-size: 13px;
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 10vh;
-  height: 20vh;
 }
 
 .header-nav {
@@ -206,6 +197,7 @@ footer {
 }
 
 h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 10vw;
   font-weight: 900;
 }
@@ -228,7 +220,7 @@ h1 {
   border-radius: 8px;
 }
 
-.intro-content {
+.card-content {
   width: 90%;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -252,12 +244,21 @@ hr {
   width: 90%;
 }
 
-.footer-content {
+footer {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-top: 10vh;
+  height: 50vh;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
-  margin-top: 3vh;
   width: 90%;
 }
 
@@ -265,3 +266,29 @@ hr {
   font-weight: bold;
 }
 
+.address {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  margin-top: 40px;
+  width: 580px;
+  /* margin-right: px; */
+}
+
+
+.icons {
+  margin-top: 0px;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  width: 300px;
+}
+
+.facebook, .twitter, .instagram, .youtube {
+  padding: 0px 5px 0px 5px;
+}
+
+.socials {
+  margin-top: 40px;
+}
