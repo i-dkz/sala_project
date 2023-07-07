@@ -148,25 +148,22 @@ main {
 }
 
 .mobile-nav a {
-  
   color: var(--bg-color);
   text-decoration: none;
   font-size: 100%;
   font: weight 4px;
   transition: 0.5s;
   height: 26px;
-  width: 100%;
-  
-
+  /* width: 100%; */
   text-shadow: 4px 4px 8px #000000;
 }
 
-.mobile-nav a:hover {
+.mobile-nav a:hover{
   background-color: var(--primary-text-color);
   color: white;
   opacity: 60%;
   height: 26px;
-  width: 100%;
+  /* width: 100%; */
   z-index: 10;
   /* border-radius: 8px; */
   padding: 2px;
@@ -247,7 +244,7 @@ hr {
 footer {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   width: 100%;
   margin-top: 10vh;
@@ -258,8 +255,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   width: 90%;
+  height: 30vh;
 }
 
 .footer-title {
@@ -270,9 +268,10 @@ footer {
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 40px;
   width: 580px;
+  line-height: 25px;
   /* margin-right: px; */
 }
 
@@ -281,8 +280,12 @@ footer {
   margin-top: 0px;
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  
   width: 300px;
+}
+
+.icon {
+  font-size: 25px;
 }
 
 .facebook, .twitter, .instagram, .youtube {
@@ -291,4 +294,44 @@ footer {
 
 .socials {
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+  width: 400px;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.back-to-top {
+  display: flex;
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.top-link {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  gap: 6px;
+  
+}
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: var(--primary-text-color);
+  color: white;
+  opacity: 60%;
+
 }
