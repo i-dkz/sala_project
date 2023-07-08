@@ -232,7 +232,6 @@ h1 {
 .learn-more {
   position: relative;
   margin-bottom: 20px;
-  width: 100px;
   cursor: pointer;
 }
 
@@ -485,7 +484,7 @@ input {
 
 button {
   margin-top: 10px;
-  width: 100%;
+  width: 100px;
   background-color: #ffffff;
   color: #080710;
   padding: 10px 0;
@@ -500,10 +499,8 @@ button {
 }
 
 #apply {
-  width: 100px;
   position: relative;
   margin-bottom: 20px;
-
   cursor: pointer;
 }
 
