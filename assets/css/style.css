@@ -195,7 +195,7 @@ main {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 5vw;
+  font-size: 10vw;
   font-weight: 900;
 }
 
@@ -232,7 +232,7 @@ h1 {
 .learn-more {
   position: relative;
   margin-bottom: 20px;
-  width: 30%;
+  width: 100px;
   cursor: pointer;
 }
 
@@ -424,27 +424,7 @@ a:hover {
   opacity: 60%; 
 }
 
-@media (min-width: 500px) {
-   main {
-    width: 70%;
-   }
 
-   footer {
-    width: 70%;
-   }
-
-  .address {
-    margin-right: 300px;
-  }
-
-  .socials-container {
-    width: 30%;
-  }
-
-  .back-to-top {
-    width:100%;
-  }
-}
 
 form {
   /* margin-top: 10px; */
@@ -520,8 +500,35 @@ button {
 }
 
 #apply {
+  width: 100px;
   position: relative;
   margin-bottom: 20px;
-  width: 30%;
+
   cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  main {
+   width: 70%;
+  }
+
+  footer {
+   width: 70%;
+  }
+
+ .address {
+   margin-right: 300px;
+ }
+
+ .socials-container {
+   width: 30%;
+ }
+
+ .back-to-top {
+   width:100%;
+ }
 }
