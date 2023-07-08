@@ -195,7 +195,7 @@ main {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 10vw;
+  font-size: 5vw;
   font-weight: 900;
 }
 
@@ -288,6 +288,62 @@ footer {
   font-size: 25px;
 }
 
+#fb a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  
+  transition: 0.5s;
+}
+
+#fb a:hover {
+  background-color: white;
+  color: rgb(24, 101, 195);
+  opacity: 100%; 
+}
+
+#twit a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  
+  transition: 0.5s;
+}
+
+#twit  a:hover {
+  background-color: white;
+  color: rgb(24, 101, 195);
+  opacity: 100%; 
+}
+
+
+#ig a {
+  text-decoration: none;
+  /* height: 20px; */
+}
+
+#ig a:hover {
+  
+  padding-top: 4px;
+
+  background-color: white;
+  border-radius: 8px;
+  color: rgb(240, 19, 163);
+  /* color: white; */
+  opacity: 100%; 
+}
+
+#yt a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  
+  transition: 0.5s;
+}
+
+#yt a:hover {
+  background-color: white;
+  color: rgb(251, 32, 32);
+  opacity: 100%; 
+}
+
 .facebook, .twitter, .instagram, .youtube {
   padding: 0px 5px 0px 5px;
 }
@@ -369,6 +425,14 @@ a:hover {
 }
 
 @media (min-width: 500px) {
+   main {
+    width: 70%;
+   }
+
+   footer {
+    width: 70%;
+   }
+
   .address {
     margin-right: 300px;
   }
