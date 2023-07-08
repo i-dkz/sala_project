@@ -36,3 +36,7 @@ hamburger.addEventListener('click', () => {
     primaryNav.setAttribute("data-visible", false);
   }
 });
+
+document.getElementById('apply').addEventListener('click', function() {
+  document.getElementById('registration').classList.remove('hidden');
+});
