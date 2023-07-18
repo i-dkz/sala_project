@@ -7,7 +7,47 @@
 </head>
 <body>
     <main>
-        
+        <h1>Received Data</h1>
+        <div id="display-data"></div>
+      
+        <script>
+          // Function to get the URL query parameters
+          function getQueryParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryParams = {};
+            for (const [key, value] of urlParams) {
+              queryParams[key] = value;
+            }
+            return queryParams;
+          }
+      
+          // Function to display the received data on the page
+          function displayData() {
+            const dataDiv = document.getElementById("display-data");
+            const queryParams = getQueryParams();
+      
+            // Extract the form data
+            const fullName = queryParams["full-name"];
+            const email = queryParams["email"];
+            const phoneNumber = queryParams["phone"];
+            const course = queryParams["user_course"];
+            const date = queryParams["date"];
+            const consultLength = queryParams["consult"];
+      
+            // Update the content of the "display-data" div
+            dataDiv.innerHTML = `
+              <p><strong>Full Name:</strong> ${fullName}</p>
+              <p><strong>Email:</strong> ${email}</p>
+              <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+              <p><strong>Course:</strong> ${course}</p>
+              <p><strong>Date:</strong> ${date}</p>
+              <p><strong>Consult Length:</strong> ${consultLength}</p>
+            `;
+          }
+      
+          // Call the displayData function when the page loads
+          window.onload = displayData;
+        </script>
     </main>
 </body>
 </html>
