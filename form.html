@@ -34,7 +34,9 @@
                 const email = document.getElementById("email").value;
           
                 const modalContentText = `<p>Thank you for registering, ${fullName}!</p>
-                <p>You will receive a confirmation email at ${email}</p>`;
+                <br>
+                <p>You will receive a confirmation email at ${email}</p>
+                <br>`;
           
                 showModal(modalContentText);
               });
@@ -55,7 +57,7 @@
                 <label for="full-name" class="label-style">full name</label>
                 <input type="text" id="full-name" name="full-name" placeholder="John Smith" required minlength="5" pattern="^[A-Za-z ]+$">
                 <label for="email" class="label-style">email</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required pattern="^[a-zA-Z0-9._%+-]{1,30}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                <input type="email" id="email" name="email" placeholder="john@example.com" required pattern="^[a-zA-Z0-9._%+-]{1,30}@[a-zA-Z0-9.-]+\.(com)$">
                 <label for="phone" class="label-style">phone number</label>
                 <input type="text" id="phone" name="phone" placeholder="optional: (999)-999-9999" pattern="^\(\d{3}\)-\d{3}-\d{4}$">
                 <label for="choice" class="label-style">choice</label>
