@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/asst.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="title"><h1>Registration</h1></div>
+            <form action="GET" action="/receive.html">
+                <label for="full-name" class="label-style">full name</label>
+                <input type="text" id="full-name">
+                <label for="email" class="label-style">email</label>
+                <input type="email" id="email">
+                <label for="phone" class="label-style">phone number</label>
+                <input type="text" id="phone">
+                <label for="user_course" class="label-style">course</label>
+                <select name="user_course" id="user_course">
+                    <option value="comp1850">COMP 1850</option>
+                    <option value="comp2132">COMP 2132</option>
+                </select>
+                <label for="date" class="label-style">date
+                </label>
+                <input type="date" id="date">
+                <label for="consult" class="label-style">consult length</label>
+                <input type="number" name="consult" id="consult">
+                <input type="submit" name="submit" id="submit" class="submit-button">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

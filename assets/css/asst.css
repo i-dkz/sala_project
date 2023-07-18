@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    align-items: center;
+  }
+  
+  main {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 650px;
+    border: 2px solid rgb(233, 231, 231);
+    border-radius: 10px;
+    box-shadow: 2px 4px 9px 2px rgba(0, 0, 0, 0.5);
+    align-items: center;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5); */
+  }
+
+  form {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px;
+    gap: 20px;
+    background-color: #ffffff;
+    width: 90%;
+    height: 450px;
+    border: 2px solid rgb(238, 236, 236);
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  }
+
+    .submit-button {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center; /* Center the button horizontally */
+    }
+
+  .label-style {
+    justify-self: center;
+    align-self: center;
+  }
+
+  input {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    form {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+      grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 40px;
+      gap: 1px;
+    }
+
+    .submit-button {
+        margin-top: 20px;
+        grid-column-start: 1; /* Start at the first column */
+        grid-column-end: 2; /* End at the second column (span one column) */
+      }
+  }
