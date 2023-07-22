@@ -24,7 +24,6 @@ body {
 }
 
 
-
 header {
   margin: 0;
   position: fixed;
@@ -34,6 +33,7 @@ header {
   background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
+  border: 1px solid grey;
 }
 
 main {
@@ -162,6 +162,13 @@ main {
   height: 26px;
   z-index: 10;
   padding: 2px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-container {
@@ -491,16 +498,39 @@ button {
 }
 
 @media (min-width: 500px) {
+
+
+
   h1 {
     font-size: 5vw;
   }
 
   main {
-   width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   footer {
-   width: 70%;
+   width: 80%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    height: 600px;
   }
 
  .address {
