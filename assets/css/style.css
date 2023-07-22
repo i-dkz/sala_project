@@ -62,7 +62,7 @@ main {
 
 .logo {
   display: flex;
-  width: 50%;
+  width: 40%;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -119,7 +119,9 @@ main {
 .hamburger.open .burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
-
+.desktop-nav {
+  display: none;
+}
 
 .mobile-nav {
   font-family: 'Roboto', sans-serif;
@@ -511,6 +513,29 @@ button {
 
  .back-to-top {
    width:100%;
+ }
+
+ .hamburger {
+  display: none;
+ }
+
+ .mobile-nav {
+  display: none;
+ }
+
+ .header-nav {
+  width: 50%;
+ }
+ .desktop-nav {
+  width: 60%;
+  display: flex;
+  z-index: 999;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+ }
+
+ ul {
+  list-style: none;
  }
 }
 
