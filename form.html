@@ -2,89 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/asst.css">
-    <title>Booking</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/asst.css">
+  <title>Booking</title>
 </head>
 
 <body>
-    <main>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              const modalOverlay = document.getElementById("modalOverlay");
-              const modalContent = document.getElementById("modalContent");
-              const registrationForm = document.getElementById("registration-form");
-              const closeButton = document.querySelector(".close-button");
-          
-              function showModal(content) {
-                modalContent.innerHTML = content;
-                modalOverlay.style.display = "block";
-              }
-          
-              function hideModal() {
-                modalOverlay.style.display = "none";
-                registrationForm.reset();
-              }
-          
-              registrationForm.addEventListener("submit", function (event) {
-                event.preventDefault(); 
-          
-                const fullName = document.getElementById("full-name").value;
-                const email = document.getElementById("email").value;
-          
-                const modalContentText = `<p>Thank you for booking, ${fullName}!</p>
+  <main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modalOverlay = document.getElementById("modalOverlay");
+        const modalContent = document.getElementById("modalContent");
+        const registrationForm = document.getElementById("registration-form");
+        const closeButton = document.querySelector(".close-button");
+
+        function showModal(content) {
+          modalContent.innerHTML = content;
+          modalOverlay.style.display = "block";
+        }
+
+        function hideModal() {
+          modalOverlay.style.display = "none";
+          registrationForm.reset();
+        }
+
+        registrationForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const fullName = document.getElementById("full-name").value;
+          const email = document.getElementById("email").value;
+
+          const modalContentText = `<p>Thank you for booking, ${fullName}!</p>
                 <br>
                 <p>You will receive a confirmation email at ${email}</p>
                 <br>`;
-          
-                showModal(modalContentText);
-              });
-          
-              closeButton.addEventListener("click", hideModal);
-            });
-          </script>
-          
-          
-          
+
+          showModal(modalContentText);
+        });
+
+        closeButton.addEventListener("click", hideModal);
+      });
+    </script>
 
 
-        <div class="card">
-            <div class="title">
-                <h1>Book a Consultation</h1>
-            </div>
-            <form  method="POST" id="registration-form">
-                <label for="full-name" class="label-style">full name</label>
-                <input type="text" id="full-name" name="full-name" placeholder="John Smith" required minlength="5" pattern="^[A-Za-z ]+$">
-                <label for="email" class="label-style">email</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required pattern="^[a-zA-Z0-9._%+-]{1,30}@[a-zA-Z0-9.-]+\.(com)$">
-                <label for="phone" class="label-style">phone number</label>
-                <input type="text" id="phone" name="phone" placeholder="optional: (999)-999-9999" pattern="^\(\d{3}\)-\d{3}-\d{4}$">
-                <label for="choice" class="label-style">choice</label>
-                <select name="choice" id="choice" required>
-                    <option value="Website">Website</option>
-                    <option value="Design">Design</option>
-                    <option value="SEO">SEO</option>
-                </select>
-                <label for="date" class="label-style" name="date">date
-                </label>
-                <input type="date" id="date" required>
-                <label for="consult" class="label-style">consult length</label>
-                <input type="number" name="consult" id="consult" placeholder="min 1 hour - max 4 hours" required min="1" max="4">
-                <input type="submit" name="submit" id="submit" class="submit-button" value="submit">
-            </form>
-            <div class="modal-overlay" id="modalOverlay">
-                <div class="modal">
-                  <div class="modal-content" id="modalContent">
 
-                  </div>
-                  <button class="close-button">Close</button>
-                </div>
-              </div>
-              
+
+
+    <div class="card">
+      <div class="title">
+        <h1>Book a Consultation</h1>
+      </div>
+      <form method="POST" id="registration-form">
+        <label for="full-name" class="label-style">full name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="John Smith" required minlength="5"
+          pattern="^[A-Za-z ]+$">
+        <label for="email" class="label-style">email</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required
+          pattern="^[a-zA-Z0-9._%+-]{1,30}@[a-zA-Z0-9.-]+\.(com)$">
+        <label for="phone" class="label-style">phone number</label>
+        <input type="text" id="phone" name="phone" placeholder="optional: (999)-999-9999"
+          pattern="^\(\d{3}\)-\d{3}-\d{4}$">
+        <label for="program" class="label-style">program</label>
+        <select name="program" id="program" required>
+          <option value="Full Time">Computing</option>
+          <option value="Flex">Design</option>
+        </select>
+        <label for="date" class="label-style" name="date">date
+        </label>
+        <input type="date" id="date" required>
+        <label for="consult" class="label-style">consult length</label>
+        <input type="number" name="consult" id="consult" placeholder="min 1 hour - max 4 hours" required min="1"
+          max="4">
+        <input type="submit" name="submit" id="submit" class="submit-button" value="submit">
+      </form>
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <div class="modal-content" id="modalContent">
+
+          </div>
+          <button class="close-button">Close</button>
         </div>
+      </div>
 
-    </main>
+    </div>
+
+  </main>
 </body>
 
 </html>

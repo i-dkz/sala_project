@@ -69,7 +69,7 @@
 
 
         </div>
-        <form id="registration" class="hidden" action="">
+        <!-- <form id="registration" class="hidden" action="">
             <h3>Register</h3>
 
 
@@ -86,7 +86,27 @@
             <div class="social">
 
             </div>
+        </form> -->
+        <form  method="POST" id="registration" class="hidden">
+            <label for="full-name" class="label-style">full name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="John Smith" required minlength="5" pattern="^[A-Za-z ]+$">
+            <label for="email" class="label-style">email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required pattern="^[a-zA-Z0-9._%+-]{1,30}@[a-zA-Z0-9.-]+\.(com)$">
+            <label for="program" class="label-style">program</label>
+            <select name="program" id="program" required>
+              <option value="Full-Time">Full-Time</option>
+              <option value="Part-Time">Part-Time</option>
+            </select>
+            <input type="submit" name="submit" id="submit" class="submit-button" value="submit">
         </form>
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+              <div class="modal-content" id="modalContent">
+    
+              </div>
+              <button class="close-button">Close</button>
+            </div>
+          </div>
     </main>
     <footer>
         <hr>
