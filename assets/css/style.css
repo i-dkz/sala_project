@@ -386,7 +386,7 @@ footer {
 .newsletter {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
   
 }
 
@@ -599,6 +599,7 @@ button {
  }
  .desktop-nav {
   width: 60%;
+  min-width: 180px;
   display: flex;
   z-index: 999;
   justify-content: space-between;
