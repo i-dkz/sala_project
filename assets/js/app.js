@@ -67,9 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const fullName = document.getElementById("full-name").value;
     const email = document.getElementById("email").value;
 
-    const modalContentText = `<p>Thank you for booking, ${fullName}!</p>
+    const modalContentText = `<p>Thank you for inquiring, ${fullName}!</p>
           <br>
-          <p>You will receive a confirmation email at ${email}</p>
+          <p>A program advisor will reach out to you via email at ${email}</p>
           <br>`;
 
     showModal(modalContentText);
