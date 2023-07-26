@@ -436,12 +436,20 @@ a:hover {
   opacity: 60%; 
 }
 
-
+/* .form-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+} */
 
 form {
   height: 520px;
   width: 350px;
-  position: fixed;
+  position: absolute;
+
   border-radius: 10px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
